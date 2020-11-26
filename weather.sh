@@ -6,6 +6,10 @@
 source ./config
 
 cd $dir
+
+cp site.webmanifest $webhome
+cp LICENSE $webhome
+
 # Ugly-ass hack for the day of the week
 day=$(date | head -c 3)
 
@@ -27,7 +31,7 @@ fi
 
 # Get daily Southwest Area Fire Danger and other info from the SWCC
 wget https://gacc.nifc.gov/swcc/predictive/intelligence/daily/UPLOAD_Files_toSWCC/F_01_50_Daily_Fire_Danger_DISPATCH.jpg -O $webhome/FireDanger.jpg
-wget https://gacc.nifc.gov/swcc/predictive/intelligence/daily/UPLOAD_Files_toSWCC/A_01_10_PREPAREDNESS_LEVEL.csv -O $webhome/AZ_Wildfire_Prep.csv
+wget https://gacc.nifc.gov/swcc/predictive/intelligence/daily/UPLOAD_Files_toSWCC/A_01_10_PREPAREDNESS_LEVEL.csv -O $webhome/SW_Wildfire_Prep.csv
 wget https://gacc.nifc.gov/swcc/predictive/intelligence/daily/UPLOAD_Files_toSWCC/G_01_30_Daily_RX_AZ_Website.csv -O $webhome/Daily_RX_AZ.csv
 ##########################################################
 
@@ -192,7 +196,7 @@ cat footer.html >> DailyWeather.html
 
 # Copy the report to a web page
 
-cp DailyWeather.html $webhome
+cp DailyWeather.html $webhome/index.html
 ##########################################################
 
 

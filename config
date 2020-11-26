@@ -6,8 +6,8 @@
 from="weather-noreply@www.lltodd.family"
 
 # set email to the address that GETS the email
-#email="weather-noreply@stdavidfire.com"
-email="jake@lltodd.family"
+email="weather-noreply@stdavidfire.com"
+#email="jake@lltodd.family"
 
 # set wxcast to the full path to the wxcast program
 wxcast=/usr/local/bin/wxcast
