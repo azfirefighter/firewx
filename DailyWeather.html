@@ -94,7 +94,6 @@
     <li><a href="#Burns">Burns</a></li>
     <li><a href="#dngr">DNGR</a></li>
     <li><a href="#wwa">WWA</a></li>
-    <li><a href="#pns">PNS</a></li>
     <li><a href="#7day">7-Day</a></li>
     <li><a href="#awd">Area</a></li>
     <li><a href="#zone">Zone151</a></li>
@@ -102,11 +101,11 @@
 <h6>Information is downloaded hourly.</br>
 </br>
 This report was generated on&nbsp;
-<font color='yellow'>Thu Nov 26 06:00:11 MST 2020</font></h6>
+<font color='yellow'>Thu Nov 26 07:10:21 MST 2020</font></h6>
 <p id="prep"><div id="shadowbox"><b>WILDFIRE PREPAREDNESS LEVELS</b></br>
 <div id="prep_level"></div>
 <script type="text/javascript">
- $.get('./A_01_10_PREPAREDNESS_LEVEL.csv', function(data) {
+ $.get('./AZ_Wildfire_Prep.csv', function(data) {
 	var build = '<table border="0"cellpadding="0" cellspacing="0" style="border-collapse: collapse;" width="50%">\n';
 	var rows = data.split("\n");
 	rows.forEach( function getvalues(thisRow) {
@@ -139,12 +138,9 @@ This report was generated on&nbsp;
 <p id="dngr"><div id="shadowbox"><b>SOUTHWEST AREA FIRE DANGER</b></br>
 <a href="https://www.lltodd.family/firewx/FireDanger.jpg" target="_blank"><img src="https://www.lltodd.family/firewx/FireDanger.jpg" width="25%"></a></br>
 Click to enlarge.</div></p>
-<p id="wwa"><div id="shadowbox"><b>REGULAR WATCHES/WARNINGS/ADVISORIES</b></br><blockquote>
+<p id="wwa"><div id="shadowbox"><b>WATCHES/WARNINGS/ADVISORIES</b></br><blockquote>
 <br></p>
 None.<br></p>
-</blockquote></div></p>
-<p id="pns"><div id="shadowbox"><b>PUBLIC INFORMATION STATEMENT</b></br><blockquote>
-<i>The statements can be long.  To view it, <a href="https:\\www.lltodd.family\firewx/pns.html">CLICK HERE</a></i>.
 </blockquote></div></p>
 <p id="7day"><div id="shadowbox"><b>7-DAY FORECAST</b></br><blockquote>
   <b>This</b> <b>Afternoon</b><b>:</b>  Sunny. High near 78, with temperatures falling to around 72<br>
@@ -255,7 +251,7 @@ middle of next week.
 <div id="footer">
 <footer>
     Produced using the <a href="https://github.com/smarlowucf/wxcast">wxcast Python library</a> by <a href=https://github.com/smarlowucf" target="_blank">Sean Marlow</a> and is licensed under the <a href="https://raw.githubusercontent.com/smarlowucf/wxcast/master/LICENSE" target=_blank">MIT License</a>.<br>
-    Script and web page provided under the <a href="https://www.gnu.org/licenses/gpl-3.0-standalone.html" target="_blank">GNU GPL 3.0</a>.<br>
+    Script and web page provided under the <a href="./LICENSE" target="_blank">GNU GPL 3.0</a>.<br>
     SW Area Fire Danger, Daily RX Burns and Wildfire Preparedness provided by the <a href="https://gacc.nifc.gov/swcc/index.htm" target="_blank">Southwest Coordination Center</a>.</br>
     <span class="copyleft">&copy;</span> Copyleft 2019 by <a href="https://github.com/azfirefighter" target="_blank">Jason Todd</a>.
 </footer>
