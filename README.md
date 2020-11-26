@@ -3,8 +3,7 @@
 This script is licensed under the GPL 3.0 and may be modified and shared provided the original author is credited by leaving the footer.html file
 as-is.
 
-Currently, this script is set up for use by [Animas Fire & Rescue](https://www.animasfire.com).  
-It is also currently used (in modified form) by the [Saint David Fire Distict](http://www.stdavidfire.com).
+It is currently in use by the [Saint David Fire Distict](http://www.stdavidfire.com/firewx).
 
 >This script requires the wxcast Python3 library and requires some configuration and the use of crontab and the mail commands.
 
