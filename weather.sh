@@ -197,6 +197,7 @@ cat footer.html >> DailyWeather.html
 # Copy the report to a web page
 
 cp DailyWeather.html $webhome/index.html
+rm $dir/DailyWeather.html
 ##########################################################
 
 
