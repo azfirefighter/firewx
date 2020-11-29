@@ -1,4 +1,0 @@
-requests==2.20.0
-click==7.1.2
-geopy==2.0.0
-wxcast==1.4.0
