@@ -151,5 +151,9 @@ mv zone151.txt _includes
 
 echo "$(date)" > _includes/date.txt
 # Clean up the disk space
+
 rm $dir/*.txt
+
 jekyll build && jekyll deploy
+
+rm $dir/_includes/*.txt

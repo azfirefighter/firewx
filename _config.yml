@@ -19,6 +19,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - LICENSE
+  - WARRANTY
   - config
   - weather.sh
   - send-mail.sh
