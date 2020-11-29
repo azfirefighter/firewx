@@ -16,7 +16,7 @@ updates:
     schedule:
       interval: "monthly"
     allow:
-      - dependency-name: "jekyll '=4.1.1'"
+      - dependency-name: "jekyll"
       - dependency-name: "jekyll-mentions"
       - dependency-name: "jekyll-deploy"
     commit-message:
