@@ -6,7 +6,7 @@ updates:
     schedule:
       interval: "monthly"
     allow:
-      - dependency-name: "wxcast"
+      - dependency-name: "https://github.com/smarlowucf/wxcast"
     commit-message:
       prefix: "pip"
 
