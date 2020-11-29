@@ -11,14 +11,15 @@ It is currently in use by the [Saint David Fire Distict](http://www.stdavidfire.
 
 DIFFICULTY LEVEL: **MODERATE**
 
-1. Install ruby using your package manager (sudo [package manager name] install python3 ruby gcc make).
+1. Install ruby using your package manager (sudo [package manager name] install python3 ruby bundler gcc make).
 2. Install jekyll (sudo gem install jekyll).
-3. Install wxcast (sudo pip3 install wxcast).
-4. Set the required variables in the config file.
-5. Set the required variables in the index.md file.
-6. Copy your department's logo to the images directory.
-7. Use crontab -e to set the frequency that weather.sh will be ran.  It is recommended to run it at least every hour.
-8. Use crontab -e to set how often to run send-mail.sh.
+3. Run bundler (sudo bundle install)
+4. Install wxcast and dependencies (sudo pip3 install -r requirements.txt).
+5. Set the required variables in the config file.
+6. Set the required variables in the index.md file.
+7. Copy your department's logo to the images directory.
+8. Use crontab -e to set the frequency that weather.sh will be ran.  It is recommended to run it at least every hour.
+9. Use crontab -e to set how often to run send-mail.sh.
    I send it out once per day.
 
 **SOME ASSEMBLY REQUIRED:**
