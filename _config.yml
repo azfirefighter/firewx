@@ -26,6 +26,7 @@ exclude:
   - .git/*
   - .gitignore
   - README.md
+  - requirements.txt
 
 # Deploy
 deploy:
