@@ -11,14 +11,12 @@ updates:
       prefix: "pip"
 
   - package-ecosystem: "bundler"
-    target_branch: "2.1.4"
     vendor: true
     directory: "/"
     schedule:
       interval: "monthly"
     allow:
       - dependency-name: "jekyll"
-        target_branch: "4.1.1"
       - dependency-name: "jekyll-mentions"
       - dependency-name: "jekyll-deploy"
     commit-message:
