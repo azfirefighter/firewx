@@ -1,0 +1,45 @@
+<br>
+<b>TODAY</b><br>
+* Sky/Weather..............Sunny. <br>
+* Max Temperature..........64 to 74 degs. <br>
+*    24 hr Trend...........Up 3 to 7 degs. <br>
+* Min Humidity.............5 to 15 pct. <br>
+*    24 hr Trend...........Down 9 to 13 pct. <br>
+* Wind (20 ft/10-min avg)..East around 10 mph. <br>
+* 10000 ft MSL Wind........Northeast 5 to 10 mph. <br>
+* Chance of Precip.........0 pct. <br>
+* LAL......................1. <br>
+* Haines Index.............5 or moderate. <br>
+* Mixing Height............3711 ft agl. <br>
+* Transport Winds..........East 8 to 9 knots. <br>
+* Ventilation Category.....Fair (33399 knot-ft). <br>
+<br>
+<b>TONIGHT</b><br>
+* Sky/Weather..............Clear. <br>
+* Min Temperature..........33 to 43 degs. <br>
+*    24 hr Trend...........Up 3 to 6 degs. <br>
+* Max Humidity.............42 to 52 pct. <br>
+*    24 hr Trend...........Down 3 to 6 pct. <br>
+* Wind (20 ft/10-min avg)..East 15 to 20 mph. <br>
+* 10000 ft MSL Wind........East around 5 mph shifting to the south <br>
+  after midnight. <br>
+* Chance of Precip.........0 pct. <br>
+* LAL......................1. <br>
+* Haines Index.............6 or high. <br>
+<br>
+<b>MONDAY</b><br>
+* Sky/Weather..............Partly cloudy. <br>
+* Max Temperature..........58 to 68 degs. <br>
+*    24 hr Trend...........Down 3 to 7 degs. <br>
+* Min Humidity.............10 to 20 pct. <br>
+*    24 hr Trend...........Up 2 to 5 pct. <br>
+* Wind (20 ft/10-min avg)..Breezy. East 15 to 25 mph in the morning<br>
+  then easing in the afternoon. <br>
+* 10000 ft MSL Wind........West 5 to 10 mph. <br>
+* Chance of Precip.........0 pct. <br>
+* LAL......................1. <br>
+* Haines Index.............5 or moderate. <br>
+* Mixing Height............2934 ft agl. <br>
+* Transport Winds..........East 17 to 18 knots. <br>
+* Ventilation Category.....Good (52812 knot-ft). <br>
+<br>

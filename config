@@ -13,7 +13,7 @@ email="weather-noreply@stdavidfire.com"
 wxcast=/usr/local/bin/wxcast
 
 # set dir to the directory that the script runs in
-dir=/root/firewx
+dir=/root/firewx-new
 
 # set webhome to the web host path you want to serve from
 webhome=/var/www/html/firewx

@@ -7,9 +7,6 @@ source ./config
 
 cd $dir
 
-cp site.webmanifest $webhome
-cp LICENSE $webhome
-
 # Ugly-ass hack for the day of the week
 day=$(date | head -c 3)
 
@@ -30,9 +27,8 @@ elif [ $day = "Sat" ]; then
 fi
 
 # Get daily Southwest Area Fire Danger and other info from the SWCC
-wget https://gacc.nifc.gov/swcc/predictive/intelligence/daily/UPLOAD_Files_toSWCC/F_01_50_Daily_Fire_Danger_DISPATCH.jpg -O $webhome/FireDanger.jpg
-wget https://gacc.nifc.gov/swcc/predictive/intelligence/daily/UPLOAD_Files_toSWCC/A_01_10_PREPAREDNESS_LEVEL.csv -O $webhome/SW_Wildfire_Prep.csv
-wget https://gacc.nifc.gov/swcc/predictive/intelligence/daily/UPLOAD_Files_toSWCC/G_01_30_Daily_RX_AZ_Website.csv -O $webhome/Daily_RX_AZ.csv
+wget https://gacc.nifc.gov/swcc/predictive/intelligence/daily/UPLOAD_Files_toSWCC/A_01_10_PREPAREDNESS_LEVEL.csv -O SW_Wildfire_Prep.csv
+wget https://gacc.nifc.gov/swcc/predictive/intelligence/daily/UPLOAD_Files_toSWCC/G_01_30_Daily_RX_AZ_Website.csv -O Daily_RX_AZ.csv
 ##########################################################
 
 # REGULAR WATCHES / WARNINGS / ADVISORIES
@@ -44,6 +40,7 @@ sed -i '/.DISCUSSION/,/&&/d' wwa-step2.txt
 sed -i '/.AVIATION/,/&&/d' wwa-step2.txt
 sed -i '/.FIRE WEATHER/,/&&/d' wwa-step2.txt
 sed -n '6,$p' < wwa-step2.txt > wwa.txt
+rm wwa-step2.txt
 sed -i '$d' wwa.txt
 sed -i '$d' wwa.txt
 sed -i '$d' wwa.txt
@@ -55,7 +52,8 @@ sed -i '/^$/d' wwa.txt
 sed -i '/^\&\&/,$d' wwa.txt
 #sed -i '/^.TWC WATCHES\/WARNINGS\/ADVISORIES.../d' wwa.txt
 sed -i 's/.TWC WATCHES\/WARNINGS\/ADVISORIES...//' wwa.txt
-sed -i 's/$/<br><\/p>/' wwa.txt
+sed -i 's/$//' wwa.txt
+mv wwa.txt _includes
 ##########################################################
 
 # Remember to just create a LINK to this file hosted on the web since there can be SO much data.
@@ -101,6 +99,7 @@ sed -i 's/Friday/<br><b>Friday<\/b>/' 7dayfcast.txt
 sed -i 's/Saturday/<br><b>Saturday<\/b>/' 7dayfcast.txt
 sed -i 's/Sunday/<br><b>Sunday<\/b>/' 7dayfcast.txt
 sed -i 's/$/<br>/' 7dayfcast.txt
+mv 7dayfcast.txt _includes
 ##########################################################
 
 # Get the area discussion
@@ -110,9 +109,10 @@ sed -i '/.AVIATION.../,/&&/d' afd.txt
 sed -i '/.FIRE WEATHER.../,/&&/d' afd.txt
 sed -i '/.TWC WATCHES\/WARNINGS\/ADVISORIES.../,/&&/d' afd.txt
 sed -i 's/.SYNOPSIS.../<p><b>SYNOPSIS<\/b><br>/' afd.txt
-sed -i 's/.DISCUSSION.../<\/p><p><b>DISCUSSION<\/b><br>/' afd.txt
-sed -i 's/&&/<\/p>/' afd.txt
+sed -i 's/.DISCUSSION.../<p><b>DISCUSSION<\/b><br>/' afd.txt
+sed -i 's/&&//' afd.txt
 sed -i '/^\$\$/Q' afd.txt
+mv afd.txt _includes
 ##########################################################
 
 # Get the full Fire Weather Forecast
@@ -127,6 +127,7 @@ sed -i '$d' fwf.txt
 sed -i '$d' fwf.txt
 sed -i '$d' fwf.txt
 sed -i 's/$/<br>/' fwf.txt
+mv fwf.txt _includes
 ##########################################################
 
 # Pull out just the fire zone forecast
@@ -145,61 +146,10 @@ sed -i 's/.FRIDAY.../<b>FRIDAY<\/b>/' zone151.txt
 sed -i 's/.SATURDAY.../<b>SATURDAY<\/b>/' zone151.txt
 sed -i 's/$/<br>/' zone151.txt
 #echo "</pre>" >> zone151.txt
+mv zone151.txt _includes
 ##########################################################
 
-# Put it all together!
-#
-# Headers and Menu
-cat header.html > DailyWeather.html
-echo "<font color='yellow'>$(TZ='America/Phoenix' date)</font></h6>" >> DailyWeather.html
-
-# Preparedness Levels
-echo '<p id="prep"><div id="shadowbox"><b>WILDFIRE PREPAREDNESS LEVELS</b></br>' >> DailyWeather.html
-cat  wildfire-prep.html >> DailyWeather.html
-echo '</div></p>' >> DailyWeather.html
-
-# Daily Prescribed Burns
-echo '<p id="burns"><div id="shadowbox"><b>DAILY PRESCRIBED BURNS (STATEWIDE)</b></br>' >> DailyWeather.html
-cat RX_Planned_AZ.html >> DailyWeather.html
-echo "</div></p>" >> DailyWeather.html
-
-# SWCC Daily Southwest Area Fire Danger
-echo '<p id="dngr"><div id="shadowbox"><b>SOUTHWEST AREA FIRE DANGER</b></br>' >> DailyWeather.html
-echo '<a href="https://www.lltodd.family/firewx/FireDanger.jpg" target="_blank"><img src="https://www.lltodd.family/firewx/FireDanger.jpg" width="25%"></a></br>' >> DailyWeather.html
-echo 'Click to enlarge.</div></p>' >> DailyWeather.html
-
-# TWC WATCHES/WARNINGS/ADVISORIES
-echo '<p id="wwa"><div id="shadowbox"><b>WATCHES/WARNINGS/ADVISORIES</b></br><blockquote>' >> DailyWeather.html
-cat wwa.txt >> DailyWeather.html
-echo "</blockquote></div></p>" >> DailyWeather.html
-
-# 7-DAY FORECAST
-echo '<p id="7day"><div id="shadowbox"><b>7-DAY FORECAST</b></br><blockquote>' >> DailyWeather.html
-cat 7dayfcast.txt >> DailyWeather.html
-echo "</blockquote></div></p>" >> DailyWeather.html
-
-# AREA DISCUSSION
-echo '<p id="awd"><div id="shadowbox"><b>AREA DISCUSSION</b></br><blockquote>' >> DailyWeather.html
-cat afd.txt >> DailyWeather.html
-echo "</blockquote></div></p>" >> DailyWeather.html
-
-# ZONE 151 FORECAST
-echo '<p id="zone"><div id="shadowbox"><b>ZONE 151 FORECAST</b></br><blockquote>' >> DailyWeather.html
-cat zone151.txt >> DailyWeather.html
-echo "</blockquote></div></p>" >> DailyWeather.html
-
-#
-# ADD THE FOOTER
-cat footer.html >> DailyWeather.html
-
-##########################################################
-
-# Copy the report to a web page
-
-cp DailyWeather.html $webhome/index.html
-rm $dir/DailyWeather.html
-##########################################################
-
-
+echo "$(date)" > _includes/date.txt
 # Clean up the disk space
 rm $dir/*.txt
+jekyll build && jekyll deploy

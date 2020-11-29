@@ -1,0 +1,36 @@
+# Site settings
+description: Fire weather forecast
+lang: en_US
+timezone: America/Phoenix
+
+# URL settings
+url: "https://www.lltodd.family/firewx"
+baseurl:
+
+# Markdown settings
+markdown: kramdown
+
+# Jekyll mentions
+jekyll-mentions:
+  base_url: "https://github.com/"
+
+# Build settings
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - config
+  - weather.sh
+  - send-mail.sh
+  - .git/*
+  - .gitignore
+  - README.md
+
+# Deploy
+deploy:
+- cp -R * /var/www/html/firewx
+
+# Plugins
+plugins:
+  - jekyll-mentions
+  - jekyll-deploy
