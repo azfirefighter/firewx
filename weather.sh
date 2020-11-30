@@ -59,6 +59,8 @@ sed -i '/^\&\&/,$d' wwa.txt
 #sed -i '/^.TWC WATCHES\/WARNINGS\/ADVISORIES.../d' wwa.txt
 sed -i 's/.TWC WATCHES\/WARNINGS\/ADVISORIES...//' wwa.txt
 sed -i 's/$//' wwa.txt
+rm wwa-raw.txt
+rm wwa-step2.txt
 mv wwa.txt _includes
 ##########################################################
 
@@ -118,6 +120,7 @@ sed -i 's/.SYNOPSIS.../<p><b>SYNOPSIS<\/b><br>/' afd.txt
 sed -i 's/.DISCUSSION.../<p><b>DISCUSSION<\/b><br>/' afd.txt
 sed -i 's/&&//' afd.txt
 sed -i '/^\$\$/Q' afd.txt
+rm afd-raw.txt
 mv afd.txt _includes
 ##########################################################
 
@@ -133,6 +136,7 @@ sed -i '$d' fwf.txt
 sed -i '$d' fwf.txt
 sed -i '$d' fwf.txt
 sed -i 's/$/<br>/' fwf.txt
+rm fwf-disc.txt
 mv fwf.txt _includes
 ##########################################################
 
@@ -151,15 +155,15 @@ sed -i 's/.THURSDAY.../<b>THURSDAY<\/b>/' zone151.txt
 sed -i 's/.FRIDAY.../<b>FRIDAY<\/b>/' zone151.txt
 sed -i 's/.SATURDAY.../<b>SATURDAY<\/b>/' zone151.txt
 sed -i 's/$/<br>/' zone151.txt
-#echo "</pre>" >> zone151.txt
+rm fwf-raw.txt
 mv zone151.txt _includes
 ##########################################################
 
+# This is for the date at the top of the html file
 echo "$(date)" > _includes/date.txt
-# Clean up the disk space
 
-rm $dir/*.txt
-
+# Build the html file and deploy it.
 jekyll build && jekyll deploy
 
+# Clean up disk space
 rm $dir/_includes/*.txt

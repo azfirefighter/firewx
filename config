@@ -1,5 +1,5 @@
 #
-# LIMITED configuration file
+# LIMITED configuration file for shell scripts: weather.sh and send-mail.sh
 #
 
 # set from to the address that SENDS the email

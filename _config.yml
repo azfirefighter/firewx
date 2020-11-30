@@ -1,3 +1,7 @@
+#
+# Configuration file for jekyll
+#
+
 # Site settings
 description: Fire weather forecast
 lang: en_US
