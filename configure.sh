@@ -138,7 +138,7 @@ echo -e "-----------------------------------------------------------------------
 user=$(whoami)
 echo "MAILTO=''" > crontab.install
 echo "0 4-19 * * * $dir/weather.sh >/dev/null 2>&1" >> crontab.install
-echo "0 5 * * * $dir/send-mail.sh >/dev/null 2>&1 >> crontab.install
+echo "0 5 * * * $dir/send-mail.sh >/dev/null 2>&1" >> crontab.install
 crontab -u $user crontab.install
 sudo systemctl restart crond
 
