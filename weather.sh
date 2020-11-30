@@ -152,6 +152,23 @@ sed -i 's/.WEDNESDAY.../<b>WEDNESDAY<\/b>/' zone151.txt
 sed -i 's/.THURSDAY.../<b>THURSDAY<\/b>/' zone151.txt
 sed -i 's/.FRIDAY.../<b>FRIDAY<\/b>/' zone151.txt
 sed -i 's/.SATURDAY.../<b>SATURDAY<\/b>/' zone151.txt
+sed -i 's/\* Sky\/Weather\.\.\.\.\.\.\.\.\.\.\.\.\.\./<span style="margin-left: 40px; color: orange"><i>Sky\/Weather\: <\/i><\/span>/' zone151.txt
+sed -i 's/\* Max Temperature\.\.\.\.\.\.\.\.\.\./<span style="margin-left: 40px; color: orange"><i>Max Temparature\:<\/i><\/span> /' zone151.txt
+sed -i 's/\* Mixing Height\.\.\.\.\.\.\.\.\.\.\.\./<span style="margin-left: 40px; color: orange"><i>Mixing Height\:<\/i><\/span> /' zone151.txt
+sed -i 's/\* Transport Winds\.\.\.\.\.\.\.\.\.\./<span style="margin-left: 40px; color: orange"><i>Transport Winds\:<\/i><\/span> /' zone151.txt
+sed -i 's/\* Ventilation Category\.\.\.\.\./<span style="margin-left: 40px; color: orange"><i>Ventilation Category\:<\/i><\/span> /' zone151.txt
+sed -i 's/\* Min Temperature\.\.\.\.\.\.\.\.\.\./<span style="margin-left: 40px; color: orange"><i>Min Temparature\:<\/i><\/span> /' zone151.txt
+sed -i 's/\* Min Humidity\.\.\.\.\.\.\.\.\.\.\.\.\./<span style="margin-left: 40px; color: orange"><i>Min Humidity\:<\/i><\/span> /' zone151.txt
+sed -i 's/\* Max Humidity\.\.\.\.\.\.\.\.\.\.\.\.\./<span style="margin-left: 40px; color: orange"><i>Max Humidity\:<\/i><\/span> /' zone151.txt
+sed -i 's/\* Wind (20 ft\/10-min avg)\.\./<span style="margin-left: 40px; color: orange"><i>Wind (20ft \/ 10min ave)\:<\/i><\/span> /' zone151.txt
+sed -i 's/\* 10000 ft MSL Wind\.\.\.\.\.\.\.\./<span style="margin-left: 40px; color: orange"><i>10000 ft MSL Wind\:<\/i><\/span> /' zone151.txt
+sed -i 's/\* Chance of Precip\.\.\.\.\.\.\.\.\./<span style="margin-left: 40px; color: orange"><i>Chance of Precip\:<\/i><\/span> /' zone151.txt
+sed -i 's/pct\./\%\./' zone151.txt
+sed -i 's/\* LAL\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\./<span style="margin-left: 40px; color: orange"><i>LAL\:<\/i><\/span> /' zone151.txt
+sed -i 's/\* Haines Index\.\.\.\.\.\.\.\.\.\.\.\.\./<span style="margin-left: 40px; color: orange"><i>Haines Index\:<\/i><\/span> /' zone151.txt
+sed -i 's/\* //' zone151.txt
+sed -i 's/\.\.\.\.\.\.\.\.\.\.\./\:<\/i><\/span> /' zone151.txt
+sed -i 's/24 hr Trend\:/<span style="margin-left: 40px; color: orange"><i>24 hr Trend\:<\/i><\/span> /' zone151.txt
 sed -i 's/$/<br>/' zone151.txt
 rm fwf-raw.txt
 mv zone151.txt _includes
@@ -161,8 +178,9 @@ mv zone151.txt _includes
 echo "$(date)" > _includes/date.txt
 
 # Build the html file and deploy it.
-jekyll build && jekyll deploy
+#jekyll build && jekyll deploy
+jekyll serve
 
 # Clean up disk space
-rm $dir/_includes/*.txt
-rm $dir/*.csv
+#rm $dir/_includes/*.txt
+#rm $dir/*.csv
