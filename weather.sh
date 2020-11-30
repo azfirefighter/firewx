@@ -1,9 +1,15 @@
-#!/bin/sh
+#!/bin/bash
 #
 # Supposedly this will send the daily fire weather
 #
 
-source ./config
+# I have to use RVM to run ruby on my server
+
+source /etc/profile.d/rvm.sh
+
+# Bring in the config variables
+
+source /root/firewx-new/config
 
 cd $dir
 

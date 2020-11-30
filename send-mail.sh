@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source ./config
+source /root/firewx-new/config
 
 logger "Emailing morning fire weather briefing."
 

@@ -3,20 +3,20 @@
 #
 
 # set from to the address that SENDS the email
-from="weather-noreply@www.lltodd.family"
+export from="weather-noreply@www.lltodd.family"
 
 # set email to the address that GETS the email
-email="weather-noreply@stdavidfire.com"
-#email="jake@lltodd.family"
+export email="weather-noreply@stdavidfire.com"
+#export email="jake@lltodd.family"
 
 # set wxcast to the full path to the wxcast program
-wxcast=/usr/local/bin/wxcast
+export wxcast=/usr/local/bin/wxcast
 
 # set dir to the directory that the script runs in
-dir=/root/firewx-new
+export dir=/root/firewx-new
 
 # set webhome to the web host path you want to serve from
-webhome=/var/www/html/firewx
+export webhome=/var/www/html/firewx
 
 # set url to the actual website address
-url="https://www.lltodd.family/firewx"
+export url="https://www.lltodd.family/firewx"
