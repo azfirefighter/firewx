@@ -69,7 +69,7 @@ mv wwa.txt _includes
 # Get the 7 day forecast for St David and format it.
 $wxcast forecast $zipcode > 7dayfcast.txt
 sed -i 's/No forecast found for location\: 85630 coordinates\: 31\.902220000000057\,\-110\.21934499999998/The NWS has no forecast available to download for Saint David\./' 7dayfcast.txt
-sed -i 's/$/<br>/' 7dayfcast.txt
+#sed -i 's/$/<br>/' 7dayfcast.txt
 sed -i 's/\:/<b>\:<\/b>/' 7dayfcast.txt
 sed -i 's/Today/<b>Today<\/b>/' 7dayfcast.txt
 sed -i 's/Tonight/<b>Tonight<\/b>/' 7dayfcast.txt
