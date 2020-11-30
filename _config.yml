@@ -36,7 +36,16 @@ exclude:
 deploy:
 - cp -R * /var/www/html/firewx
 
+
+# Webp
+webp:
+  enabled: true
+  quality: 75
+  img_dir: ["images"]
+  formats: [".jpg", ".png"]
+  
 # Plugins
 plugins:
   - jekyll-mentions
   - jekyll-deploy
+  - jekyll-webp
