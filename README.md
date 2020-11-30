@@ -6,7 +6,7 @@ This script is licensed under the GPL 3.0 and may be modified and shared provide
 
 It is currently in use by the [Saint David Fire Distict](http://www.stdavidfire.com/firewx).
 
->This script requires python3, the [wxcast](https://github.com/smarlowucf/wxcast) Python3 library, ruby, [jekyll](https://jekyllrb.com/docs/), [sed](https://www.gnu.org/software/sed/manual/sed.html), [tr](https://linuxize.com/post/linux-tr-command/), [awk](https://www.tutorialspoint.com/unix_commands/awk.htm), [cut](https://www.computerhope.com/unix/ucut.htm) and requires some configuration and the use of [crontab](https://www.tutorialspoint.com/unix_commands/crontab.htm) and the mail commands.  Before trying to use this repo, you should become VERY familiar with jekyll, sed cut, awk and tr.
+>This script requires python3, the [wxcast](https://github.com/smarlowucf/wxcast) Python3 library, ruby, [jekyll](https://jekyllrb.com/docs/), [sed](https://www.gnu.org/software/sed/manual/sed.html), [tr](https://linuxize.com/post/linux-tr-command/), [awk](https://www.gnu.org/software/gawk/manual/), [cut](https://www.computerhope.com/unix/ucut.htm), [wget](https://www.gnu.org/software/wget/manual/), [grep](https://www.gnu.org/software/grep/manual/) and requires some configuration and the use of [crontab](https://www.tutorialspoint.com/unix_commands/crontab.htm) and the mail commands.  Before trying to use this repo, you should become VERY familiar with jekyll, sed cut, awk and tr.
 
 DIFFICULTY LEVEL: **MODERATE**
 
