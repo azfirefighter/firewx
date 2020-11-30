@@ -168,3 +168,4 @@ jekyll build && jekyll deploy
 
 # Clean up disk space
 rm $dir/_includes/*.txt
+rm $dir/*.csv
