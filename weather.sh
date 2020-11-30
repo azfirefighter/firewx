@@ -60,7 +60,6 @@ sed -i '/^\&\&/,$d' wwa.txt
 sed -i 's/.TWC WATCHES\/WARNINGS\/ADVISORIES...//' wwa.txt
 sed -i 's/$//' wwa.txt
 rm wwa-raw.txt
-rm wwa-step2.txt
 mv wwa.txt _includes
 ##########################################################
 
