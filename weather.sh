@@ -58,7 +58,6 @@ sed -i '$d' wwa.txt
 sed -i '$d' wwa.txt
 sed -i '/^$/d' wwa.txt
 sed -i '/^\&\&/,$d' wwa.txt
-#sed -i '/^.TWC WATCHES\/WARNINGS\/ADVISORIES.../d' wwa.txt
 sed -i 's/.TWC WATCHES\/WARNINGS\/ADVISORIES...//' wwa.txt
 sed -i 's/$//' wwa.txt
 rm wwa-raw.txt
@@ -70,6 +69,7 @@ mv wwa.txt _includes
 # Get the 7 day forecast for St David
 $wxcast forecast $zipcode > 7dayfcast.txt
 sed -i 's/No forecast found for location\: 85630 coordinates\: 31\.902220000000057\,\-110\.21934499999998/The NWS has no forecast available to download for Saint David\./' 7dayfcast.txt
+sed -i 's/$/<br>/' 7dayfcast.txt
 sed -i 's/\:/<b>\:<\/b>/' 7dayfcast.txt
 sed -i 's/Today/<b>Today<\/b>/' 7dayfcast.txt
 sed -i 's/Tonight/<b>Tonight<\/b>/' 7dayfcast.txt
@@ -78,7 +78,6 @@ sed -i 's/This/<b>This<\/b>/' 7dayfcast.txt
 sed -i 's/Thru/<b>Thru<\/b>/' 7dayfcast.txt
 sed -i 's/Afternoon/<b>Afternoon<\/b>/' 7dayfcast.txt
 sed -i 's/Evening/<b>Evening<\/b>/' 7dayfcast.txt
-#sed -i 's/Over/<b>Over<\/b>/' 7dayfcast.txt
 sed -i 's/Overnight/<b>Overnight<\/b>/' 7dayfcast.txt
 sed -i 's/Day/<b>Day<\/b>/' 7dayfcast.txt
 sed -i 's/Night/<b>Night<\/b>/' 7dayfcast.txt
@@ -107,7 +106,6 @@ sed -i 's/Thursday/<br><b>Thursday<\/b>/' 7dayfcast.txt
 sed -i 's/Friday/<br><b>Friday<\/b>/' 7dayfcast.txt
 sed -i 's/Saturday/<br><b>Saturday<\/b>/' 7dayfcast.txt
 sed -i 's/Sunday/<br><b>Sunday<\/b>/' 7dayfcast.txt
-sed -i 's/$/<br>/' 7dayfcast.txt
 mv 7dayfcast.txt _includes
 ##########################################################
 
