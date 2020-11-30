@@ -143,7 +143,6 @@ mv fwf.txt _includes
 sed -n '/AZZ151/,/$$/p' fwf-raw.txt > zone151.txt
 sed -i '/AZZ/,/2020/d' zone151.txt
 sed -i '/.FORECAST DAYS 3 THROUGH 7.../,$d' zone151.txt
-#sed -i '1i<pre>' zone151.txt
 sed -i 's/.TODAY.../<b>TODAY<\/b>/' zone151.txt
 sed -i 's/.TONIGHT.../<b>TONIGHT<\/b>/' zone151.txt
 sed -i 's/.SUNDAY.../<b>SUNDAY<\/b>/' zone151.txt
