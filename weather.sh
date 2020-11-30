@@ -4,12 +4,14 @@
 #
 
 # I have to use RVM to run ruby on my server
-
-source /etc/profile.d/rvm.sh
+if [ -e "/etc/profile.d/rvm.sh" ]
+then
+	source /etc/profile.d/rvm.sh
+fi
 
 # Bring in the config variables
 
-source /root/firewx-new/config
+source "$(pwd)/config"
 
 cd $dir
 
@@ -38,7 +40,7 @@ wget https://gacc.nifc.gov/swcc/predictive/intelligence/daily/UPLOAD_Files_toSWC
 ##########################################################
 
 # REGULAR WATCHES / WARNINGS / ADVISORIES
-$wxcast text TWC AFD > afd-raw.txt
+$wxcast text $office AFD > afd-raw.txt
 cp afd-raw.txt wwa-raw.txt
 sed -n '9,$p' < wwa-raw.txt > wwa-step2.txt
 sed -i '/.SYNOPSIS/,/&&/d' wwa-step2.txt
@@ -66,7 +68,7 @@ mv wwa.txt _includes
 # Remember to just create a LINK to this file hosted on the web since there can be SO much data.
 ##########################################################
 # Get the 7 day forecast for St David
-$wxcast forecast 85630 > 7dayfcast.txt
+$wxcast forecast $zipcode > 7dayfcast.txt
 sed -i 's/No forecast found for location\: 85630 coordinates\: 31\.902220000000057\,\-110\.21934499999998/The NWS has no forecast available to download for Saint David\./' 7dayfcast.txt
 sed -i 's/\:/<b>\:<\/b>/' 7dayfcast.txt
 sed -i 's/Today/<b>Today<\/b>/' 7dayfcast.txt
@@ -124,7 +126,7 @@ mv afd.txt _includes
 ##########################################################
 
 # Get the full Fire Weather Forecast
-$wxcast text TWC FWF > fwf-raw.txt
+$wxcast text $office FWF > fwf-raw.txt
 cp fwf-raw.txt fwf-disc.txt
 sed -i '/000/,/\+/d' fwf-disc.txt
 sed -i '/AZZ150/Q' fwf-disc.txt

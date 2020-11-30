@@ -25,11 +25,14 @@ exclude:
   - LICENSE
   - WARRANTY
   - VERSION
-  - requires
+  - CODE_OF_CONDUCT.md
+  - SECURITY
   - config
   - weather.sh
   - send-mail.sh
+  - configure.sh
   - .git/*
+  - .github/*
   - .gitignore
   - README.md
   - requirements.txt
