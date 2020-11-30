@@ -168,7 +168,7 @@ echo "author: Jason Todd" >> index.md
 echo "license: LICENSE" >> index.md
 echo "logo: $logo" >> index.md
 echo "title: $title" >> index.md
-
+echo "---" >> index.md
 
 
 echo -e "-------------------------------------------------------------------------------"
