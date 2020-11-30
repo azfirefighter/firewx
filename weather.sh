@@ -178,9 +178,8 @@ mv zone151.txt _includes
 echo "$(date)" > _includes/date.txt
 
 # Build the html file and deploy it.
-#jekyll build && jekyll deploy
-jekyll serve
+jekyll build && jekyll deploy
 
 # Clean up disk space
-#rm $dir/_includes/*.txt
-#rm $dir/*.csv
+rm $dir/_includes/*.txt
+rm $dir/*.csv
