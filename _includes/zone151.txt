@@ -1,0 +1,47 @@
+<br>
+<b>TODAY</b><br>
+<span style="margin-left: 40px; color: orange"><i>Sky/Weather: </i></span>Sunny. <br>
+<span style="margin-left: 40px; color: orange"><i>Max Temparature:</i></span> 62 to 72 degs. <br>
+   <span style="margin-left: 40px; color: orange"><i>24 hr Trend:</i></span> </i></span> Up 3 to 6 degs. <br>
+<span style="margin-left: 40px; color: orange"><i>Min Humidity:</i></span> 10 to 20 %. <br>
+   <span style="margin-left: 40px; color: orange"><i>24 hr Trend:</i></span> </i></span> Down 2 to 5 %. <br>
+<span style="margin-left: 40px; color: orange"><i>Wind (20ft / 10min ave):</i></span> East around 10 mph shifting to the <br>
+  northwest in the afternoon. <br>
+<span style="margin-left: 40px; color: orange"><i>10000 ft MSL Wind:</i></span> Northwest 25 to 30 mph. <br>
+<span style="margin-left: 40px; color: orange"><i>Chance of Precip:</i></span> 0 %. <br>
+<span style="margin-left: 40px; color: orange"><i>LAL:</i></span> 1. <br>
+<span style="margin-left: 40px; color: orange"><i>Haines Index:</i></span> 5 or moderate. <br>
+<span style="margin-left: 40px; color: orange"><i>Mixing Height:</i></span> 3740 ft agl. <br>
+<span style="margin-left: 40px; color: orange"><i>Transport Winds:</i></span> East 6 knots shifting to the northwest <br>
+  in the afternoon. <br>
+<span style="margin-left: 40px; color: orange"><i>Ventilation Category:</i></span> Good (41140 knot-ft). <br>
+<br>
+<b>TONIGHT</b><br>
+<span style="margin-left: 40px; color: orange"><i>Sky/Weather: </i></span>Clear. <br>
+<span style="margin-left: 40px; color: orange"><i>Min Temparature:</i></span> 27 to 37 degs. <br>
+   <span style="margin-left: 40px; color: orange"><i>24 hr Trend:</i></span> </i></span> Little change. <br>
+<span style="margin-left: 40px; color: orange"><i>Max Humidity:</i></span> 38 to 48 %. <br>
+   <span style="margin-left: 40px; color: orange"><i>24 hr Trend:</i></span> </i></span> Down 14 to 18 %. <br>
+<span style="margin-left: 40px; color: orange"><i>Wind (20ft / 10min ave):</i></span> North around 10 mph shifting to the east <br>
+  after midnight. <br>
+<span style="margin-left: 40px; color: orange"><i>10000 ft MSL Wind:</i></span> Northwest 15 to 20 mph. <br>
+<span style="margin-left: 40px; color: orange"><i>Chance of Precip:</i></span> 0 %. <br>
+<span style="margin-left: 40px; color: orange"><i>LAL:</i></span> 1. <br>
+<span style="margin-left: 40px; color: orange"><i>Haines Index:</i></span> 5 or moderate. <br>
+<br>
+<b>WEDNESDAY</b><br>
+<span style="margin-left: 40px; color: orange"><i>Sky/Weather: </i></span>Sunny. <br>
+<span style="margin-left: 40px; color: orange"><i>Max Temparature:</i></span> 58 to 68 degs. <br>
+   <span style="margin-left: 40px; color: orange"><i>24 hr Trend:</i></span> </i></span> Down 2 to 5 degs. <br>
+<span style="margin-left: 40px; color: orange"><i>Min Humidity:</i></span> 9 to 18 %. <br>
+   <span style="margin-left: 40px; color: orange"><i>24 hr Trend:</i></span> </i></span> Little change. <br>
+<span style="margin-left: 40px; color: orange"><i>Wind (20ft / 10min ave):</i></span> East around 10 mph. <br>
+<span style="margin-left: 40px; color: orange"><i>10000 ft MSL Wind:</i></span> Northwest 20 to 25 mph. <br>
+<span style="margin-left: 40px; color: orange"><i>Chance of Precip:</i></span> 0 %. <br>
+<span style="margin-left: 40px; color: orange"><i>LAL:</i></span> 1. <br>
+<span style="margin-left: 40px; color: orange"><i>Haines Index:</i></span> 4 or low. <br>
+<span style="margin-left: 40px; color: orange"><i>Mixing Height:</i></span> 4763 ft agl. <br>
+<span style="margin-left: 40px; color: orange"><i>Transport Winds:</i></span> Southeast 8 knots shifting to the <br>
+  southwest 9 knots in the afternoon. <br>
+<span style="margin-left: 40px; color: orange"><i>Ventilation Category:</i></span> Good (42867 knot-ft). <br>
+<br>

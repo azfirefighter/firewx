@@ -37,6 +37,20 @@ fi
 # Get daily Southwest Area Fire Danger and other info from the SWCC
 wget https://gacc.nifc.gov/swcc/predictive/intelligence/daily/UPLOAD_Files_toSWCC/A_01_10_PREPAREDNESS_LEVEL.csv -O SW_Wildfire_Prep.csv
 wget https://gacc.nifc.gov/swcc/predictive/intelligence/daily/UPLOAD_Files_toSWCC/G_01_30_Daily_RX_AZ_Website.csv -O Daily_RX_AZ.csv
+wget https://gacc.nifc.gov/swcc/predictive/intelligence/daily/UPLOAD_Files_toSWCC/D_04_70_SWCC_Morning_Situation_Report.pdf -O assets/Southwest_Situation_Report.pdf
+wget https://www.nifc.gov/nicc/sitreprt.pdf -O assets/National_Situation_Report.pdf
+##########################################################
+
+# Simplify Wildfire Preparedness Level
+cut -d\, -f2 SW_Wildfire_Prep.csv > level-raw.txt
+cut -b106 level-raw.txt > levels.txt
+sed -n '1p' levels.txt > sw-level.txt
+sed -n '2p' levels.txt > nat-level.txt
+export sw=$(cat sw-level.txt)
+export us=$(cat nat-level.txt)
+echo "<a href=\"assets/Southwest_Situation_Report.pdf\" target=\"_blank\"><img src=\"https://img.shields.io/badge/Southwest-$sw-blue\"></a>&nbsp;<a href=\"assets/National_Situation_Report.pdf\" target=\"_blank\"><img src=\"https://img.shields.io/badge/National-$us-green\"></a>&nbsp;<font size=\"-3\">Click one for the appropriate situation report.</font>" > _includes/wildfire-prep.html
+rm level*.txt
+rm SW_Wildfire_Prep.csv
 ##########################################################
 
 # REGULAR WATCHES / WARNINGS / ADVISORIES

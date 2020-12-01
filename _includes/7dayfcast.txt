@@ -1,0 +1,18 @@
+          <b>Today</b><b>:</b>  Sunny. High near 68, with temperatures falling to around 63 in<br>
+                  the afternoon. West northwest wind 2 to 9<br>
+                  mph.<br>
+        <br><b>Tonight</b><b>:</b>  Clear, with a low around 25. North northeast wind around 5<br>
+                  mph.<br>
+      <br><b>Wednesday</b><b>:</b>  Sunny. High near 64, with temperatures falling to around 59 in<br>
+                  the afternoon. East wind 2 to 6 mph.<br>
+<br><b>Wednesday</b> <b>Night</b><b>:</b>  Clear, with a low around 23. Northeast wind 3 to 7 mph.<br>
+       <br><b>Thursday</b><b>:</b>  Sunny, with a high near 55. East wind 7 to 13 mph.<br>
+ <br><b>Thursday</b> <b>Night</b><b>:</b>  Mostly clear, with a low around 21.<br>
+         <br><b>Friday</b><b>:</b>  Sunny, with a high near 56.<br>
+   <br><b>Friday</b> <b>Night</b><b>:</b>  Mostly clear, with a low around 24.<br>
+       <br><b>Saturday</b><b>:</b>  Sunny, with a high near 60.<br>
+ <br><b>Saturday</b> <b>Night</b><b>:</b>  Mostly clear, with a low around 26.<br>
+         <br><b>Sunday</b><b>:</b>  Sunny, with a high near 62.<br>
+   <br><b>Sunday</b> <b>Night</b><b>:</b>  Mostly clear, with a low around 27.<br>
+         <br><b>Monday</b><b>:</b>  Sunny, with a high near 63.<br>
+   <br><b>Monday</b> <b>Night</b><b>:</b>  Mostly clear, with a low around 28.<br>
