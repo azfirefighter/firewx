@@ -145,17 +145,6 @@ sed -i 's/.WEDNESDAY.../<b>WEDNESDAY<\/b>\:/' zone151.txt
 sed -i 's/.THURSDAY.../<b>THURSDAY<\/b>\:/' zone151.txt
 sed -i 's/.FRIDAY.../<b>FRIDAY<\/b>\:/' zone151.txt
 sed -i 's/.SATURDAY.../<b>SATURDAY<\/b>\:/' zone151.txt
-sed -i '/AZZ/,/2020/d' zone151.txt
-sed -i '/.FORECAST DAYS 3 THROUGH 7.../,$d' zone151.txt
-sed -i 's/.TODAY.../<b>TODAY<\/b>/' zone151.txt
-sed -i 's/.TONIGHT.../<b>TONIGHT<\/b>/' zone151.txt
-sed -i 's/.SUNDAY.../<b>SUNDAY<\/b>/' zone151.txt
-sed -i 's/.MONDAY.../<b>MONDAY<\/b>/' zone151.txt
-sed -i 's/.TUESDAY.../<b>TUESDAY<\/b>/' zone151.txt
-sed -i 's/.WEDNESDAY.../<b>WEDNESDAY<\/b>/' zone151.txt
-sed -i 's/.THURSDAY.../<b>THURSDAY<\/b>/' zone151.txt
-sed -i 's/.FRIDAY.../<b>FRIDAY<\/b>/' zone151.txt
-sed -i 's/.SATURDAY.../<b>SATURDAY<\/b>/' zone151.txt
 sed -i 's/\* Sky\/Weather\.\.\.\.\.\.\.\.\.\.\.\.\.\./<span style="color: orange"><i>Sky\/Weather\: <\/i><\/span>/' zone151.txt
 sed -i 's/\* Max Temperature\.\.\.\.\.\.\.\.\.\./<span style="color: orange"><i>Max Temparature\:<\/i><\/span> /' zone151.txt
 sed -i 's/\* Mixing Height\.\.\.\.\.\.\.\.\.\.\.\./<span style="color: orange"><i>Mixing Height\:<\/i><\/span> /' zone151.txt
