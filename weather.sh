@@ -133,7 +133,6 @@ mv fwf-disc.txt _includes
 
 # Pull out just the fire zone forecast
 sed -n '/AZZ151/,/$$/p' fwf-raw.txt > zone151.txt
-<<<<<<< HEAD
 sed -i '1d' zone151.txt
 sed -i '$d' zone151.txt
 sed -i 's/.FORECAST DAYS 3 THROUGH 7.../<b>FORECAST DAYS 3 THROUGH 7<\/b>/' zone151.txt
@@ -158,7 +157,6 @@ sed -i 's/.WEDNESDAY.../<b>WEDNESDAY<\/b>/' zone151.txt
 sed -i 's/.THURSDAY.../<b>THURSDAY<\/b>/' zone151.txt
 sed -i 's/.FRIDAY.../<b>FRIDAY<\/b>/' zone151.txt
 sed -i 's/.SATURDAY.../<b>SATURDAY<\/b>/' zone151.txt
->>>>>>> 2e48d6bfacb1204c879b29a9430d5ec7a1fc8a56
 sed -i 's/\* Sky\/Weather\.\.\.\.\.\.\.\.\.\.\.\.\.\./<span style="color: orange"><i>Sky\/Weather\: <\/i><\/span>/' zone151.txt
 sed -i 's/\* Max Temperature\.\.\.\.\.\.\.\.\.\./<span style="color: orange"><i>Max Temparature\:<\/i><\/span> /' zone151.txt
 sed -i 's/\* Mixing Height\.\.\.\.\.\.\.\.\.\.\.\./<span style="color: orange"><i>Mixing Height\:<\/i><\/span> /' zone151.txt
