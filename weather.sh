@@ -123,38 +123,30 @@ sed -i 's/\:/<b>\:<\/b>/' 7dayfcast.txt
 mv 7dayfcast.txt _includes
 ##########################################################
 
-# Get the area discussion
-cp afd-raw.txt afd.txt
-sed -i '/000/,/2020/d' afd.txt
-sed -i '/.AVIATION.../,/&&/d' afd.txt
-sed -i '/.FIRE WEATHER.../,/&&/d' afd.txt
-sed -i '/.TWC WATCHES\/WARNINGS\/ADVISORIES.../,/&&/d' afd.txt
-sed -i 's/.SYNOPSIS.../<p><b>SYNOPSIS<\/b><br>/' afd.txt
-sed -i 's/.DISCUSSION.../<p><b>DISCUSSION<\/b><br>/' afd.txt
-sed -i 's/&&//' afd.txt
-sed -i '/^\$\$/Q' afd.txt
-rm afd-raw.txt
-mv afd.txt _includes
-##########################################################
-
-# Get the full Fire Weather Forecast
+# Get the full Fire Weather Forecast and split out the Discussion
 $wxcast text $office FWF > fwf-raw.txt
-cp fwf-raw.txt fwf-disc.txt
-sed -i '/000/,/\+/d' fwf-disc.txt
-sed -i '/AZZ150/Q' fwf-disc.txt
-sed -e '1,4d' < fwf-disc.txt > fwf.txt
-sed -i 's/.DISCUSSION.../<b>DISCUSSION: <\/b><br>/' fwf.txt
-sed -i '$d' fwf.txt
-sed -i '$d' fwf.txt
-sed -i '$d' fwf.txt
-sed -i '$d' fwf.txt
-sed -i 's/$/<br>/' fwf.txt
-rm fwf-disc.txt
-mv fwf.txt _includes
+sed -n '/.DISCUSSION.../,/^$/p' fwf-raw.txt > fwf-disc.txt
+sed -i 's/.DISCUSSION.../<b>DISCUSSION: <\/b><br>/' fwf-disc.txt
+sed -i 's/$/<br>/' fwf-disc.txt
+mv fwf-disc.txt _includes
 ##########################################################
 
 # Pull out just the fire zone forecast
 sed -n '/AZZ151/,/$$/p' fwf-raw.txt > zone151.txt
+<<<<<<< HEAD
+sed -i '1d' zone151.txt
+sed -i '$d' zone151.txt
+sed -i 's/.FORECAST DAYS 3 THROUGH 7.../<b>FORECAST DAYS 3 THROUGH 7<\/b>/' zone151.txt
+sed -i 's/.TODAY.../<b>TODAY\:<\/b>/' zone151.txt
+sed -i 's/.TONIGHT.../<b>TONIGHT\:<\/b>/' zone151.txt
+sed -i 's/.SUNDAY.../<b>SUNDAY<\/b>\:/' zone151.txt
+sed -i 's/.MONDAY.../<b>MONDAY<\/b>\:/' zone151.txt
+sed -i 's/.TUESDAY.../<b>TUESDAY<\/b>\:/' zone151.txt
+sed -i 's/.WEDNESDAY.../<b>WEDNESDAY<\/b>\:/' zone151.txt
+sed -i 's/.THURSDAY.../<b>THURSDAY<\/b>\:/' zone151.txt
+sed -i 's/.FRIDAY.../<b>FRIDAY<\/b>\:/' zone151.txt
+sed -i 's/.SATURDAY.../<b>SATURDAY<\/b>\:/' zone151.txt
+=======
 sed -i '/AZZ/,/2020/d' zone151.txt
 sed -i '/.FORECAST DAYS 3 THROUGH 7.../,$d' zone151.txt
 sed -i 's/.TODAY.../<b>TODAY<\/b>/' zone151.txt
@@ -166,6 +158,7 @@ sed -i 's/.WEDNESDAY.../<b>WEDNESDAY<\/b>/' zone151.txt
 sed -i 's/.THURSDAY.../<b>THURSDAY<\/b>/' zone151.txt
 sed -i 's/.FRIDAY.../<b>FRIDAY<\/b>/' zone151.txt
 sed -i 's/.SATURDAY.../<b>SATURDAY<\/b>/' zone151.txt
+>>>>>>> 2e48d6bfacb1204c879b29a9430d5ec7a1fc8a56
 sed -i 's/\* Sky\/Weather\.\.\.\.\.\.\.\.\.\.\.\.\.\./<span style="color: orange"><i>Sky\/Weather\: <\/i><\/span>/' zone151.txt
 sed -i 's/\* Max Temperature\.\.\.\.\.\.\.\.\.\./<span style="color: orange"><i>Max Temparature\:<\/i><\/span> /' zone151.txt
 sed -i 's/\* Mixing Height\.\.\.\.\.\.\.\.\.\.\.\./<span style="color: orange"><i>Mixing Height\:<\/i><\/span> /' zone151.txt
