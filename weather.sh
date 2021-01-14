@@ -48,7 +48,7 @@ sed -n '1p' levels.txt > sw-level.txt
 sed -n '2p' levels.txt > nat-level.txt
 export sw=$(cat sw-level.txt)
 export us=$(cat nat-level.txt)
-echo "<a href=\"assets/Southwest_Situation_Report.pdf\" target=\"_blank\"><img src=\"https://img.shields.io/badge/Southwest-$sw-blue\"></a>&nbsp;<a href=\"assets/National_Situation_Report.pdf\" target=\"_blank\"><img src=\"https://img.shields.io/badge/National-$us-green\"></a>&nbsp;<font size=\"-3\">Click one for the appropriate situation report.</font>" > _includes/wildfire-prep.html
+echo "<a href=\"assets/Southwest_Situation_Report.pdf\" target=\"_blank\"><img src=\"https://img.shields.io/badge/Southwest-$sw-blue\"></a>&nbsp;<a href=\"assets/National_Situation_Report.pdf\" target=\"_blank\"><img src=\"https://img.shields.io/badge/National-$us-green\"></a><br><font size=\"-3\">Click one for the appropriate situation report.</font>" > _includes/wildfire-prep.html
 rm level*.txt
 rm SW_Wildfire_Prep.csv
 ##########################################################
@@ -81,7 +81,8 @@ mv wwa.txt _includes
 # Remember to just create a LINK to this file hosted on the web since there can be SO much data.
 ##########################################################
 # Get the 7 day forecast for St David and format it.
-$wxcast forecast $zipcode > 7dayfcast.txt
+#$wxcast forecast $location > 7dayfcast.txt
+$wxcast forecast "Benson, AZ" > 7dayfcast.txt # Quick hack
 sed -i 's/No forecast found for location\: 85630 coordinates\: 31\.902220000000057\,\-110\.21934499999998/The NWS has no forecast available to download for Saint David\./' 7dayfcast.txt
 sed -i 's/$/<br>/' 7dayfcast.txt
 sed -i 's/Today/<b>Today<\/b>/' 7dayfcast.txt
@@ -126,7 +127,7 @@ mv 7dayfcast.txt _includes
 # Get the full Fire Weather Forecast and split out the Discussion
 $wxcast text $office FWF > fwf-raw.txt
 sed -n '/.DISCUSSION.../,/^$/p' fwf-raw.txt > fwf-disc.txt
-sed -i 's/.DISCUSSION.../<b>DISCUSSION: <\/b><br>/' fwf-disc.txt
+sed -i '/.DISCUSSION.../d' fwf-disc.txt
 sed -i 's/$/<br>/' fwf-disc.txt
 mv fwf-disc.txt _includes
 ##########################################################

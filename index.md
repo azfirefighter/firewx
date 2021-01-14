@@ -5,6 +5,6 @@ github: azfirefighter
 author: Jason Todd
 license: LICENSE
 logo: SDFD-trans.png
-title: Trial and Error
+title: SDFD Fire Weather Update
 ---
 

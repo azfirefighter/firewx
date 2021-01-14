@@ -8,5 +8,6 @@ url='https://www.lltodd.family/firewx'
 email='weather-noreply@stdavidfire.com'
 from='weather-noreply@www.lltodd.family'
 office=TWC
-zipcode=85630
+#zipcode=85630
+location='"Benson, AZ"'
 user=root
