@@ -1,0 +1,70 @@
+
+000
+FXUS65 KTWC 141003
+AFDTWC
+
+Area Forecast Discussion
+National Weather Service Tucson AZ
+303 AM MST Thu Jan 14 2021
+
+.SYNOPSIS...High pressure will bring a strong warming trend and
+continued dry conditions through the weekend. A weather system
+digging down from the north is expected to result in cooler
+temperatures, occasional gusty winds and a chance for valley rain
+and mountain snow showers next week.
+
+&&
+
+.DISCUSSION...A strong ridge of high pressure will build in from
+the eastern Pacific and bring temperatures 10 to 12 degrees above
+average through the weekend.
+
+Ensembles suggest a split in the flow eroding the eastern flank of
+the ridge early next week, opening our area up to a low pressure
+system diving down from the north Tuesday and Wednesday. The only
+question will be how deep the low digs before shearing back into
+higher latitude support and shifting eastward. Latest ensemble
+means suggest anomalous height depressions as far south as Sonora
+and northern Baja. That would suggest a cut-off resolution with
+significant timing issues before clearing from the west. As of now
+the NBM handles this fairly well spreading the precip chances out
+over several days, but is likely missing a favorable 12 to 24 hour
+period where we have our highest PoPs and are currently
+underforecasting precip chances for that period. When? It all
+depends on how far south and west the split goes and that could be
+as far south and west as northern Baja. Best guess is to lean
+toward a higher amplitude but less progressive lower energy
+pattern. That would slow things up a bit, and the best precip
+chances for our corner of the state may end up later in the week.
+
+&&
+
+.AVIATION...Valid through 14/12Z.
+Mostly clear with a few cirrus clouds possible. Normal wind 
+trends generally less than 10 kts. Aviation discussion not updated
+for TAF amendments.
+
+&&
+
+.FIRE WEATHER...High and dry will continue into early next week. 
+Above normal daytime high temperatures are forecast through Monday, 
+peaking around 10 degrees warmer than normal Saturday before trending
+downward. Minimum RH levels will be quite low with many valley areas
+dipping into the single digits each day. Overall, winds will be 
+light except picking up a bit out of the west on Saturday. A weather 
+system moving in Tuesday will likely result in cooler temperatures 
+and a chance of valley rain and mountain snow showers, especially 
+east of Tucson. 
+
+&&
+
+.TWC WATCHES/WARNINGS/ADVISORIES...
+None.
+&&
+
+$$
+
+Meyer
+
+Visit us on Facebook...Twitter...YouTube...and at weather.gov/Tucson
+
