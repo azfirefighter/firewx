@@ -145,7 +145,6 @@ sed -i 's/.WEDNESDAY.../<b>WEDNESDAY<\/b>\:/' zone151.txt
 sed -i 's/.THURSDAY.../<b>THURSDAY<\/b>\:/' zone151.txt
 sed -i 's/.FRIDAY.../<b>FRIDAY<\/b>\:/' zone151.txt
 sed -i 's/.SATURDAY.../<b>SATURDAY<\/b>\:/' zone151.txt
-=======
 sed -i '/AZZ/,/2020/d' zone151.txt
 sed -i '/.FORECAST DAYS 3 THROUGH 7.../,$d' zone151.txt
 sed -i 's/.TODAY.../<b>TODAY<\/b>/' zone151.txt
