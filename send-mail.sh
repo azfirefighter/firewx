@@ -1,4 +1,5 @@
 #!/bin/bash
+cd /root/firewx
 
 source $(pwd)/config
 

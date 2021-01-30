@@ -1,70 +1,83 @@
 
 000
-FXUS65 KTWC 141003
+FXUS65 KTWC 300933
 AFDTWC
 
 Area Forecast Discussion
 National Weather Service Tucson AZ
-303 AM MST Thu Jan 14 2021
+234 AM MST Sat Jan 30 2021
 
-.SYNOPSIS...High pressure will bring a strong warming trend and
-continued dry conditions through the weekend. A weather system
-digging down from the north is expected to result in cooler
-temperatures, occasional gusty winds and a chance for valley rain
-and mountain snow showers next week.
-
-&&
-
-.DISCUSSION...A strong ridge of high pressure will build in from
-the eastern Pacific and bring temperatures 10 to 12 degrees above
-average through the weekend.
-
-Ensembles suggest a split in the flow eroding the eastern flank of
-the ridge early next week, opening our area up to a low pressure
-system diving down from the north Tuesday and Wednesday. The only
-question will be how deep the low digs before shearing back into
-higher latitude support and shifting eastward. Latest ensemble
-means suggest anomalous height depressions as far south as Sonora
-and northern Baja. That would suggest a cut-off resolution with
-significant timing issues before clearing from the west. As of now
-the NBM handles this fairly well spreading the precip chances out
-over several days, but is likely missing a favorable 12 to 24 hour
-period where we have our highest PoPs and are currently
-underforecasting precip chances for that period. When? It all
-depends on how far south and west the split goes and that could be
-as far south and west as northern Baja. Best guess is to lean
-toward a higher amplitude but less progressive lower energy
-pattern. That would slow things up a bit, and the best precip
-chances for our corner of the state may end up later in the week.
+.SYNOPSIS...Areas of dense fog are expected this morning mainly 
+from Tucson north and westward. Otherwise, dry and cool weather 
+today. Temperatures will warm starting Sunday and continuing into 
+early next week before the next weather system impacts the region 
+around Wednesday and Thursday. 
 
 &&
 
-.AVIATION...Valid through 14/12Z.
-Mostly clear with a few cirrus clouds possible. Normal wind 
-trends generally less than 10 kts. Aviation discussion not updated
-for TAF amendments.
+.DISCUSSION...The mid/upper level trough and frontal band that 
+resulted in shower activity for most of southeast Arizona last night 
+has mostly pushed east of the area. Any residual light showers will 
+wrap up in the next hour or so across Cochise County with clouds 
+gradually diminishing there this morning. For the remainder of the 
+area, skies have generally cleared which given the wet ground and 
+elevated dewpoints is allowing for the development of some dense fog 
+mainly from Tucson north and westward. In collaboration with PSR, we 
+decided to hoist a Dense Fog Advisory for Eastern and Central Pima 
+County along with South-Central Pinal County through 9 AM. Certainly 
+not all areas will see fog but we're seeing increasing fog signature 
+showing up on satellite over Pinal County and portions of the T.O. 
+Nation which is likely to continue through the early morning hours. 
+Once any fog lifts later this morning, it's shaping up to be a sunny 
+but cool late January day with highs about 5 to 8 degrees below 
+normal.
+
+As ridging firmly builds in for Sunday and Monday, heights and 
+thickness values rise accordingly to result in much warmer 
+temperatures. The ridge will be 'dirty' with considerable mid and 
+high level cloudiness starting Monday and continuing Tuesday as the 
+flow becomes more southwesterly ahead of the next trough. 
+Temperatures should peak Tuesday about 10 degrees above normal. 
+
+The next storm system is expected in the Wednesday afternoon through 
+Thursday timeframe. Still considerable uncertainty on the details of 
+this system regarding the timing and exact track. We could see a pre-
+cursor subtropical disturbance resulting in some showers as 
+early as Wednesday afternoon out ahead of the main portion of the 
+storm Wednesday night into Thursday. Bottom line is expect another 
+chance of valley rain and mountain snow showers with a return to 
+cooler temperatures. A few showers could persist into Friday mainly 
+from Tucson eastward, especially if the storm is a bit slower 
+ejecting eastward. 
 
 &&
 
-.FIRE WEATHER...High and dry will continue into early next week. 
-Above normal daytime high temperatures are forecast through Monday, 
-peaking around 10 degrees warmer than normal Saturday before trending
-downward. Minimum RH levels will be quite low with many valley areas
-dipping into the single digits each day. Overall, winds will be 
-light except picking up a bit out of the west on Saturday. A weather 
-system moving in Tuesday will likely result in cooler temperatures 
-and a chance of valley rain and mountain snow showers, especially 
-east of Tucson. 
+.AVIATION...Valid through 31/12Z. Some FEW/SCT low/mid level clouds 
+remain this morning south and east of KTUS, however these are 
+rapidly dissipating. With the recent valley rain and clear skies, 
+VCFG/FG is possible for KTUS this morning. Any FG will burn off by 
+15Z or so. Expect SKC for all TAF locales during the late morning 
+and into the afternoon. SFC winds will be light and generally favor 
+the a NW direction. Aviation discussion not updated for TAF 
+amendments.
+
+&&
+
+.FIRE WEATHER...Warm and dry today through at least this coming 
+Tuesday, before another storm system approaches the region. This 
+system will have a chance to bring another round of valley rain and 
+mountain snow showers with breezy to windy conditions. Cooler 
+temperatures will also accompany this storm system.
 
 &&
 
 .TWC WATCHES/WARNINGS/ADVISORIES...
-None.
+Dense Fog Advisory until 9 AM MST this morning for AZZ502-504-
+505.
+
 &&
 
 $$
-
-Meyer
 
 Visit us on Facebook...Twitter...YouTube...and at weather.gov/Tucson
 

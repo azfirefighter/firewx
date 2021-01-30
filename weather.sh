@@ -10,10 +10,10 @@ then
 fi
 
 # Bring in the config variables
+cd /root/firewx
 
 source "$(pwd)/config"
 
-cd $dir
 
 # Ugly-ass hack for the day of the week
 day=$(date | head -c 3)
@@ -35,10 +35,14 @@ elif [ $day = "Sat" ]; then
 fi
 
 # Get daily Southwest Area Fire Danger and other info from the SWCC
-wget https://gacc.nifc.gov/swcc/predictive/intelligence/daily/UPLOAD_Files_toSWCC/A_01_10_PREPAREDNESS_LEVEL.csv -O SW_Wildfire_Prep.csv
-wget https://gacc.nifc.gov/swcc/predictive/intelligence/daily/UPLOAD_Files_toSWCC/G_01_30_Daily_RX_AZ_Website.csv -O Daily_RX_AZ.csv
-wget https://gacc.nifc.gov/swcc/predictive/intelligence/daily/UPLOAD_Files_toSWCC/D_04_70_SWCC_Morning_Situation_Report.pdf -O assets/Southwest_Situation_Report.pdf
-wget https://www.nifc.gov/nicc/sitreprt.pdf -O assets/National_Situation_Report.pdf
+echo "Downloading preparedness levels..."
+wget -q https://gacc.nifc.gov/swcc/predictive/intelligence/daily/UPLOAD_Files_toSWCC/A_01_10_PREPAREDNESS_LEVEL.csv -O SW_Wildfire_Prep.csv
+echo "Downloading AZ burns list..."
+wget -q https://gacc.nifc.gov/swcc/predictive/intelligence/daily/UPLOAD_Files_toSWCC/G_01_30_Daily_RX_AZ_Website.csv -O Daily_RX_AZ.csv
+echo "Downloading the SWCC Morning Sitrep..."
+wget -q https://gacc.nifc.gov/swcc/predictive/intelligence/daily/UPLOAD_Files_toSWCC/D_04_70_SWCC_Morning_Situation_Report.pdf -O assets/Southwest_Situation_Report.pdf
+echo "Downloading the National Sitrep..."
+wget -q https://www.nifc.gov/nicc/sitreprt.pdf -O assets/National_Situation_Report.pdf
 ##########################################################
 
 # Simplify Wildfire Preparedness Level
