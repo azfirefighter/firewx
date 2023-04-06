@@ -40,8 +40,8 @@ exclude:
 
 # Deploy
 deploy:
-- cp -R * /var/www/html/firewx
-
+#- cp -R * /var/www/html/firewx
+- rsync -az ./ root@lltodd.family:/var/www/firewx
 
 # Webp
 webp:
